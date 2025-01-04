@@ -1,7 +1,7 @@
 <!-- HEADER -->
 <p align='center'>
 <a href="#" align='center'>
-    <img src="assets/Storyboard.jpg" alt="Storyboard" height="500">
+    <img src="assets/Logo.jpg" alt="Logo" height="500">
   </a>
 <p/>
 
