@@ -13,7 +13,10 @@
 </p>
 
 ## Team group
-
+1. Andi Izra Islamay Pasya       202110370311497
+2. Hilmi Naufal Ramadhani        202110370311498
+3. Andrian Satrio Bethaviaji     202110370311518
+   
 </div>
 
 <!--Daftar Isi-->
