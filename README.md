@@ -7,7 +7,7 @@
 
 <p align="center">
   <h3 align="center">
-    Learn More About Analysis Big Data
+    Booking Hotel
   </h3>
   <br/>
 </p>
@@ -35,46 +35,46 @@
 ## Pendahuluan
 
 <div align='justify'>
-Dataset "Hotel Booking" yang digunakan dalam analysis ini yang dimiliki oleh <a href='https://github.com/rfordatascience/tidytuesday/blob/main/data/2020/2020-02-11/readme.md'>TidyTuesday</a> mencakup data pemesanan hotel dari dua jenis hotel: City Hotel dan Resort Hotel. Dataset ini berisi berbagai variabel terkait pemesanan, seperti is_canceled, lead_time, adr (Average Daily Rate), customer_type, dan special_requests. Data ini merepresentasikan pola perilaku pelanggan dalam melakukan reservasi hotel, termasuk faktor-faktor yang memengaruhi pembatalan pesanan. Dengan total puluhan variabel, dataset ini menjadi peluang menarik bagi para analis data untuk memahami karakteristik pemesanan di industri perhotelan.
+Dataset "Hotel Booking" yang digunakan dalam analisis ini, berasal dari <a href='https://github.com/rfordatascience/tidytuesday/blob/main/data/2020/2020-02-11/readme.md'>TidyTuesday<a>, mencakup informasi pemesanan dua jenis hotel: City Hotel dan Resort Hotel. Dataset ini memuat berbagai variabel terkait reservasi, seperti is_canceled, lead_time, adr (Average Daily Rate), customer_type, dan special_requests. Data ini menggambarkan perilaku pelanggan dalam melakukan pemesanan hotel, termasuk faktor-faktor yang memengaruhi kemungkinan pembatalan. Dengan puluhan variabel yang tersedia, dataset ini menawarkan peluang menarik bagi analis data untuk mengeksplorasi karakteristik pemesanan dalam industri perhotelan.
 <br>
 
-Namun, data yang kompleks memberikan tantangan tersendiri bagi para analis. Beberapa variabel memiliki distribusi yang tidak merata atau mengandung outlier, sehingga menyulitkan untuk mengidentifikasi pola dengan jelas. Selain itu, adanya nilai yang hilang atau variabel yang tidak relevan dapat memengaruhi keakuratan analisis dan interpretasi.
+Kompleksitas data ini juga menghadirkan tantangan. Beberapa variabel memiliki distribusi yang tidak merata atau mengandung outlier, sehingga menyulitkan identifikasi pola. Selain itu, keberadaan nilai yang hilang atau variabel yang kurang relevan dapat memengaruhi keakuratan analisis dan hasil interpretasi.
 <br>
 
-Untuk mengatasi tantangan ini, kami menggunakan teknik pembersihan data, eksplorasi statistik deskriptif, dan visualisasi data untuk mengidentifikasi faktor-faktor utama yang memengaruhi pembatalan pemesanan. Tujuan dari penelitian ini adalah memberikan pemahaman yang lebih baik tentang pola pemesanan hotel, sehingga manajemen hotel dapat mengambil keputusan yang lebih baik untuk mengurangi tingkat pembatalan dan meningkatkan efisiensi operasional. Penelitian ini diharapkan dapat memberikan wawasan strategis bagi industri perhotelan dalam menghadapi tantangan pembatalan pesanan.
+Untuk mengatasi kendala tersebut, kami menerapkan teknik pembersihan data, analisis statistik deskriptif, dan visualisasi data guna mengidentifikasi faktor utama yang memengaruhi pembatalan reservasi. Tujuan dari studi ini adalah memberikan wawasan mendalam tentang pola pemesanan hotel, sehingga pihak manajemen dapat mengurangi tingkat pembatalan dan meningkatkan efisiensi operasional. Penelitian ini diharapkan dapat memberikan panduan strategis bagi industri perhotelan dalam menghadapi tantangan pembatalan pemesanan.
 <br>
 
 ### 1.1 Rumusan Masalah
 
-Berdasarkan latar belakang yang telah ditulis di atas, maka rumusan masalah yang dapat difokuskan pada penelitian ini yaitu:
+Berdasarkan latar belakang yang telah disampaikan, penelitian ini difokuskan pada beberapa pertanyaan utama:
 
-1. Faktor apa saja yang memengaruhi pembatalan pemesanan hotel, dan bagaimana pola hubungan antar faktor tersebut?
+1. Faktor-faktor apa saja yang memengaruhi pembatalan pemesanan hotel, dan bagaimana hubungan antar faktor tersebut?
 2. Apakah terdapat perbedaan pola pembatalan pemesanan antara jenis hotel yang berbeda, seperti City Hotel dan Resort Hotel?
-3. Bagaimana wawasan dari analisis ini dapat digunakan untuk mengurangi tingkat pembatalan pesanan dan meningkatkan efisiensi operasional hotel?
+3. Bagaimana hasil analisis ini dapat dimanfaatkan untuk mengurangi tingkat pembatalan dan meningkatkan efisiensi operasional hotel?
 
 ### 1.2 Solusi Mengatasi Masalah
 
-Untuk mengatasi masalah ini, kami akan menggunakan data historis yang berisi informasi tentang reservasi hotel, termasuk status pembatalan, rincian pelanggan, dan parameter reservasi lainnya. Rencana kami mencakup:
+Untuk menjawab pertanyaan-pertanyaan tersebut, penelitian ini akan menggunakan data historis yang mencakup informasi pemesanan hotel, termasuk status pembatalan, profil pelanggan, dan parameter terkait reservasi lainnya. Solusi yang dirancang meliputi:
 
-1. Membersihkan data untuk memastikan kualitas analisis.
-2. Mengeksplorasi pola pembatalan.
-3. Mengidentifikasi variabel-variabel kunci yang memengaruhi pembatalan pesanan.
+1. Melakukan pembersihan data untuk memastikan kualitas dan keakuratan analisis.
+2. Menganalisis pola pembatalan secara mendalam.
+3. Mengidentifikasi variabel-variabel utama yang berkontribusi pada pembatalan pesanan.
 
 ### 1.3 Teknik Analisis yang digunakan
 
-Dalam memberikan solusi, kami menggunakan teknik analisis berikut :
+Untuk memberikan solusi yang efektif, penelitian ini menggunakan metode analisis berikut:
 
-1. Data cleaning serta summary awal untuk mengetahui isi data.
-2. Statistik deskriptif untuk mengidentifikasi tren.
-3. Visualisasi data berupa histogram dan scatterplot untuk hubungan antar variabel.
+1. Pembersihan data dan analisis awal untuk memahami struktur dataset.
+2. Statistik deskriptif guna mengidentifikasi tren dan pola.
+3. Visualisasi data, seperti histogram dan scatterplot, untuk mengeksplorasi hubungan antar variabel.
 
 ### 1.4 Manfaat Analisis
 
 Analysis ini diharapkan dapat memberikan manfaat sebagai berikut :
 
-1. Menerapkan kebijakan pemesanan yang lebih efektif, seperti memberikan insentif untuk mengurangi pembatalan.
-2. Mengoptimalkan strategi pemasaran dengan menargetkan kelompok pelanggan yang lebih cenderung menyelesaikan reservasi.
-3. Meningkatkan pengalaman pelanggan dengan memahami kebutuhan mereka, sehingga dapat mengurangi pembatalan akibat ketidakpuasan.
+1. Membantu hotel menerapkan kebijakan pemesanan yang lebih efektif, seperti menawarkan insentif untuk mengurangi pembatalan.
+2. Mengoptimalkan strategi pemasaran dengan menargetkan segmen pelanggan yang memiliki kemungkinan lebih besar untuk menyelesaikan reservasi.
+3. Meningkatkan pengalaman pelanggan dengan memahami kebutuhan mereka, sehingga dapat mengurangi pembatalan yang disebabkan oleh ketidakpuasan.
 
 </div>
 <br>
@@ -87,7 +87,7 @@ Analysis ini diharapkan dapat memberikan manfaat sebagai berikut :
 
 ### 2.1 Colab atau Python
 
-Pada Analysis ini, program dijalankan pada platfrom Google colab, namun jika ingin dijalankan IDE masing-masing, anda bisa menginstall python versi 3.12. Untuk mempelajarinya lebih lanjut, dapat menekan <a href="https://www.python.org/downloads/release/python-3100/">disini</a>.
+Pada Analysis ini, program dijalankan pada platfrom Google colab dan Visual Studio Code, anda bisa menginstall python versi 3.12.
 
 Selanjutnya, instalasi beberapa library pyton juga diperlukan. Jika anda menjalankan di IDE masing-masing, anda dapat melakukan instalasi library pada terminal python menggunakan `pip`. Tiap library ini yaitu sebagai berikut :
 
@@ -135,19 +135,13 @@ warnings.filterwarnings('ignore')
 
 ### 3.1 Sumber Data
 
-<p align='center'>
-<a href="#" align='center'>
-    <img src="assets/Hotel Bookings.png" alt="Dataset" height="300">
-  </a>
-<p/>
-
-Data dalam penelitian ini bersumber dari Github <a href='https://github.com/rfordatascience/tidytuesday/blob/main/data/2020/2020-02-11/readme.md'>TidyTuesday</a>. Dataset ini dapat dikunjungi dengan menekan hyperlink diatas.
+Data dalam penelitian ini bersumber dari Github <a href='https://github.com/rfordatascience/tidytuesday/blob/main/data/2020/2020-02-11/readme.md'>TidyTuesday</a>. Dataset ini dapat dikunjungi dengan menekan hyperlink.
 
 ### 3.2 Spesifikasi Data
 
-- Tujuan Awal Data : Data ini dikhususkan untuk analisis pemesanan hotel. Data ini dikumpulkan pada `11 Februari 2020` oleh tidytuesday.
+- Tujuan Awal Data: Dataset ini dirancang khusus untuk menganalisis pola pemesanan hotel. Data tersebut dikumpulkan oleh TidyTuesday pada tanggal 11 Februari 2020.
 
-- Jumlah Variabel : Dataset ini mencakup 32 variabel. Dictionary data ini adalah sebagai berikut.
+- Jumlah Variabel: Dataset ini terdiri dari total 32 variabel. Berikut adalah data dictionary yang menjelaskan masing-masing variabel dalam dataset ini.
 
 | variable                       | class     | description                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | :----------------------------- | :-------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -186,13 +180,13 @@ Data dalam penelitian ini bersumber dari Github <a href='https://github.com/rfor
 
 ### 3.3 Data Cleaning
 
-Pertama data di load menggunakan library pandas `pandas.read_csv` untuk membaca file csv dari data Hotel booking.
+Langkah pertama dalam pembersihan data adalah memuat dataset menggunakan pustaka Pandas dengan fungsi `pandas.read_csv` untuk membaca file CSV dari data Hotel Booking.
 
-Teknik data cleaning yang diterapkan adalah sebagai berikut.
+Berikut adalah teknik pembersihan data yang diterapkan :
 
-- Pemeriksaan data duplikat : Hal ini bermanfaat untuk memastikan tidak ada data sama yang dapat mempengaruhi hasil analisa baik secara deskriptif maupun visualisasi.
-- Pemeriksaan data null : Hal ini bermanfaat untuk menghilangkan data rancu karena value yang kosong. Jika ditemukan data yang memiliki kolum `null`, maka data tersebut akan dihapus.
-- Perbaikan format tanggal : Hal ini untuk mengubah format tanggal yang salah agar sesuai dengan format yang sesuai, seperti pada variabel `reservation_status_date` yang memiliki format tanggal yang salah.
+- Pemeriksaan Duplikasi Data : Dilakukan untuk memastikan tidak ada entri yang berulang, yang dapat memengaruhi hasil analisis baik dari segi statistik deskriptif maupun visualisasi.
+- Pemeriksaan Nilai Null : Bertujuan untuk mengidentifikasi dan menghapus data yang tidak valid akibat nilai kosong (null). Jika ditemukan kolom dengan nilai `null`, data tersebut akan dihapus untuk menjaga keakuratan analisis.
+- Perbaikan Format Tanggal: Dilakukan untuk memperbaiki format tanggal yang tidak sesuai, seperti pada variabel `reservation_status_date`, sehingga formatnya konsisten dan sesuai standar yang digunakan.
 
 ### 3.4 Data Cleaned Information
 
@@ -232,9 +226,9 @@ Distribusi Data:
 
 Insight Penting:
 
-1. Rata-rata lead time yang cukup panjang (104 hari) menunjukkan bahwa sebagian besar tamu memesan jauh sebelumnya, tetapi outlier dengan lead time sangat panjang memerlukan perhatian khusus.
-2. Harga harian rata-rata yang cukup tinggi dengan outlier ekstrem dapat menunjukkan perbedaan antara City Hotel dan Resort Hotel.
-3. Sebagian besar tamu memiliki sedikit atau tanpa permintaan khusus, tetapi tamu dengan permintaan khusus mungkin lebih kecil kemungkinan untuk membatalkan.
+1. Rata-rata lead time yang cukup panjang, yaitu 104 hari, menunjukkan bahwa mayoritas tamu melakukan pemesanan jauh sebelum tanggal menginap. Namun, keberadaan outlier dengan lead time yang sangat panjang memerlukan analisis lebih lanjut.
+2. Harga harian rata-rata (Average Daily Rate) yang relatif tinggi, dengan beberapa outlier ekstrem, mengindikasikan adanya perbedaan signifikan antara City Hotel dan Resort Hotel.
+3. Sebagian besar tamu memiliki sedikit atau bahkan tidak memiliki permintaan khusus. Namun, tamu dengan permintaan khusus cenderung memiliki kemungkinan yang lebih kecil untuk membatalkan pemesanan.
 
 </div>
 <br>
@@ -245,10 +239,17 @@ Insight Penting:
 
 Storyboard: Menjelajahi Tren Pembatalan Pemesanan Hotel
 
-Hotel merupakan bagian penting dari industri pariwisata dan perjalanan. Dengan jutaan reservasi hotel yang terjadi setiap tahun, dan pada data ini memberikan wawasan untuk memahami pola pemesanan dan pembatalan hotel di seluruh dunia.
-Melalui berbagai sumber data, termasuk sistem reservasi hotel dan laporan pelanggan, kita dapat menganalisis tren yang menyebabkan pembatalan pemesanan.
-Dataset ini menyajikan informasi mendetail mengenai faktor-faktor seperti waktu pemesanan, segmen pelanggan, jenis deposit, dan kebiasaan pelanggan.
-Dengan mengeksplorasi data ini, kita akan menemukan pola serta faktor utama yang memengaruhi keputusan pelanggan untuk membatalkan pesanan hotel.
+Hotel merupakan komponen penting dalam industri pariwisata dan perjalanan. Dengan jutaan reservasi yang dilakukan setiap tahunnya, data ini memberikan wawasan berharga untuk memahami pola pemesanan dan pembatalan hotel di berbagai wilayah.
+<br>
+
+Melalui berbagai sumber data, seperti sistem reservasi hotel dan umpan balik pelanggan, kita dapat menganalisis tren yang berkontribusi pada pembatalan reservasi.
+<br>
+
+Dataset ini menyediakan informasi rinci mengenai berbagai aspek, termasuk waktu pemesanan, segmen pelanggan, jenis deposit, dan kebiasaan pelanggan.
+<br>
+
+Dengan menganalisis data ini, kita dapat mengidentifikasi pola serta faktor utama yang memengaruhi keputusan pelanggan dalam membatalkan reservasi hotel.
+<br>
 
 Berikut hasil analisis:
 
