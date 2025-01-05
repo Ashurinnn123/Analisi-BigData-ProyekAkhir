@@ -257,95 +257,93 @@ Berikut hasil analisis:
 
 <p align='center'>
 <a href="#" align='center'>
-    <img src="assets/EDA(1).png" alt="Eda1" height="500">
+    <img src="assets/output.png" alt="Eda1" height="500">
   </a>
 <p/>
 
-Pada grafik di atas didapat dari total pemesanan bahwa sebanyak 62931 pemesanan yang diterima dan 23983 pemesanan yang dibatalkan,
-sehingga tercatat sebanyak 37% klien yang membatalkan pemesanan hotel tersebut dari total seluruh data yang ada
+Berdasarkan grafik di atas, tercatat total 62.931 pemesanan diterima, sementara 23.983 pemesanan dibatalkan. 
+Dengan demikian, sekitar 37% dari total klien membatalkan reservasi hotel mereka berdasarkan keseluruhan data yang tersedia.
 
 ### - Perbandingan jumlah pesanan yang diterima dan dibatalkan antara City Hotel dan Resort Hotel.
 
 <p align='center'>
 <a href="#" align='center'>
-    <img src="assets/EDA(2).png" alt="Eda1" height="500">
+    <img src="assets/status.png" alt="Eda1" height="500">
   </a>
 <p/>
 
-Pada hasil perbandingan tipe hotel di atas, didapat bahwa City Hotel memiliki lebih banyak pemesanan serta pembatalan pemesanan yang lebih tinggi,
-hal ini Mungkin karena Hotel Resort lebih mahal daripada Hotel City.
+Berdasarkan hasil perbandingan tipe hotel, diketahui bahwa City Hotel memiliki jumlah pemesanan yang lebih tinggi, sekaligus tingkat pembatalan yang lebih besar dibandingkan Resort Hotel. Hal ini kemungkinan disebabkan oleh biaya menginap di Resort Hotel yang cenderung lebih mahal dibandingkan City Hotel.
 
 ### - Daftar 10 negara teratas dengan tingkat pembatalan pemesanan tertinggi.
 
 <p align='center'>
 <a href="#" align='center'>
-    <img src="assets/EDA(3).png" alt="Eda1" height="500">
+    <img src="assets/negara.png" alt="Eda1" height="500">
   </a>
 <p/>
 
 dilihat dari visualisasi di atas didapat bahwa:
 
-Portugal, Portugal memiliki jumlah terbanyak yang terjadi pembatalan pemesanan yaitu 49.52% dari total 10 negara teratas
-United Kingdom of Great Britain and Northern Ireland, kedua terjadi pada negara United Kingdom yang terjadi pembatalan pemesanan yaitu 10.05% dari total 10 negara teratas
-Spanyol, ketika terjadi pada negara spanyol yang terjadi pembatalan pemesanan yaitu 9.42% dari total 10 negara teratas
-Francis, diikuti perancis yang terjadi pembatalan pemesanan yaitu 8.77% dari total 10 negara teratas
+Portugal mencatat jumlah pembatalan pemesanan tertinggi, yaitu 49,52% dari total 10 negara teratas.
+Posisi kedua ditempati oleh United Kingdom dengan tingkat pembatalan sebesar 10,05%.
+Selanjutnya, Spanyol berada di peringkat ketiga dengan pembatalan mencapai 9,42%.
+Perancis mengikuti di urutan keempat dengan tingkat pembatalan sebesar 8,77% dari total 10 negara teratas.
+
+<p align='center'>
+<a href="#" align='center'>
+    <img src="assets/negara2.png" alt="Eda1" height="500">
+  </a>
+<p/>
 
 ### - Hubungan antara lead time dan tingkat pembatalan pemesanan.
 
 <p align='center'>
 <a href="#" align='center'>
-    <img src="assets/EDA(4).png" alt="Eda1" height="500">
+    <img src="assets/leadtime.png" alt="Eda1" height="500">
   </a>
 <p/>
 
-Dilihat dari data dan visulisasi di atas menunjukkan:
-
-Booking dengan lead time lebih panjang cenderung memiliki peluang lebih besar untuk dibatalkan dan Booking dengan lead time pendek memiliki kemungkinan lebih kecil untuk dibatalkan.
-dan Ini terlihat dari rata-rata lead time lebih tinggi pada pemesanan yang dibatalkan (105.82 hari) dibandingkan dengan yang tidak dibatalkan (70.44 hari)
+Berdasarkan data dan visualisasi di atas, terlihat bahwa pemesanan dengan lead time yang lebih panjang cenderung memiliki kemungkinan lebih besar untuk dibatalkan, sedangkan pemesanan dengan lead time yang lebih pendek memiliki peluang lebih kecil untuk dibatalkan. Hal ini ditunjukkan oleh rata-rata lead time yang lebih tinggi pada pemesanan yang dibatalkan (105,82 hari) dibandingkan dengan pemesanan yang tidak dibatalkan (70,44 hari).
 
 ### - Perbandingan tarif harian rata-rata (ADR) antara City Hotel dan Resort Hotel.
 
 <p align='center'>
 <a href="#" align='center'>
-    <img src="assets/EDA(5).png" alt="Eda1" height="500">
+    <img src="assets/rata2leadtime.png" alt="Eda1" height="500">
   </a>
 <p/>
 
-Pada Grafik garis di atas menunjukkan bahwa pada hari-hari tertentu, tarif harian rata-rata untuk city hotel lebih rendah daripada tarif harian Resort hotel, serta juga ada tarif hariannya bahkan lebih rendah lagi.
-Ini memungkinkah bahwa pada akhir pekan dan hari libur, tarif Resort hotel akan naik.
+Grafik garis di atas menunjukkan bahwa pada beberapa hari tertentu, tarif harian rata-rata untuk City Hotel lebih rendah dibandingkan dengan Resort Hotel, dan ada juga hari-hari dengan tarif yang lebih rendah lagi. Hal ini mengindikasikan bahwa tarif Resort Hotel cenderung naik pada akhir pekan dan hari libur.
 
 ### - Distribusi status reservasi pada setiap bulan serta pola pembatalan pemesanan berdasarkan bulan.
 
 <p align='center'>
 <a href="#" align='center'>
-    <img src="assets/EDA(6).png" alt="Eda1" height="500">
+    <img src="assets/tarifbulanan.png" alt="Eda1" height="500">
   </a>
 <p/>
 
-Pada diagram yang dikelompokkan berdasarkan bulan dengan tingkat reservasi tertinggi dan terendah berdasarkan statusnya. terlihat bahwa bulan Agustus paling tinggi, dengan jumlah reservasi diterima tertinggi dan pembatalan relatif sedikit.
-Sebaliknya, Januari memiliki reservasi diterima paling sedikit tetapi jumlah reservasi yang dibatalkan tertinggi.
+Diagram yang dikelompokkan berdasarkan bulan menunjukkan bahwa Agustus memiliki jumlah reservasi diterima tertinggi, dengan tingkat pembatalan yang relatif rendah. Sebaliknya, Januari mencatatkan jumlah reservasi diterima paling sedikit, namun tingkat pembatalan pemesanan tertinggi.
 
 ### - Analisis pendapatan rata-rata per hari (ADR) berdasarkan bulan.
 
 <p align='center'>
 <a href="#" align='center'>
-    <img src="assets/EDA(7).png" alt="Eda1" height="500">
+    <img src="assets/reservation.png" alt="Eda1" height="500">
   </a>
 <p/>
 
-Pada grafik di atas menggambarkan bahwa pembatalan paling sering terjadi saat harga sedang tinggi dan paling jarang terjadi saat harga sedang rendah.
-Akibatnya, harga akomodasi tampaknya menjadi faktor utama yang memengaruhi pembatalan.
+Grafik di atas menunjukkan bahwa pembatalan pemesanan paling sering terjadi ketika harga akomodasi sedang tinggi, dan paling jarang terjadi ketika harga sedang rendah. Hal ini menunjukkan bahwa harga akomodasi tampaknya menjadi faktor utama yang memengaruhi keputusan pembatalan.
 
 ### - Pengaruh reservation status date terhadap tingkat pembatalan pemesanan.
 
 <p align='center'>
 <a href="#" align='center'>
-    <img src="assets/EDA(8).png" alt="Eda1" height="500">
+    <img src="assets/ADR.png" alt="Eda1" height="500">
   </a>
 <p/>
 
-Seperti yang terlihat pada grafik, reservasi dibatalkan ketika harga harian rata-rata lebih tinggi daripada ketika reservasi tidak dibatalkan.
-Dengan ini membuktikan semua analisis di atas bahwa harga yang lebih tinggi menyebabkan pembatalan pemesanan yang lebih tinggi juga.
+Seperti yang terlihat pada grafik, pemesanan cenderung dibatalkan ketika harga harian rata-rata lebih tinggi dibandingkan dengan pemesanan yang tidak dibatalkan. Hal ini mengonfirmasi analisis sebelumnya bahwa harga yang lebih tinggi berhubungan dengan tingkat pembatalan yang lebih tinggi.
 
 </div>
 <br>
@@ -358,35 +356,35 @@ Dengan ini membuktikan semua analisis di atas bahwa harga yang lebih tinggi meny
 
 ### 5.1 Pernyataan Masalah yang Dibahas
 
-Masalah utama yang dibahas adalah tingginya tingkat pembatalan pesanan di industri perhotelan, yang dapat menyebabkan kerugian finansial dan operasional. Analisis ini bertujuan untuk memahami faktor-faktor yang memengaruhi pembatalan sehingga dapat mengurangi risiko pembatalan dan meningkatkan efisiensi.
+Masalah utama yang dibahas dalam analisis ini adalah tingginya tingkat pembatalan pemesanan dalam industri perhotelan, yang dapat berdampak pada kerugian finansial dan operasional. Tujuan dari analisis ini adalah untuk memahami faktor-faktor yang memengaruhi pembatalan, sehingga dapat mengurangi risiko pembatalan dan meningkatkan efisiensi operasional.
 
 ### 5.2 Metodologi yang Digunakan
 
-- Data: Dataset historis tentang pemesanan hotel, termasuk status pembatalan dan parameter lain seperti waktu pemesanan, tipe pelanggan, dan rata-rata tarif harian.
+- Data: Dataset historis pemesanan hotel, yang mencakup status pembatalan dan parameter lain seperti waktu pemesanan, tipe pelanggan, dan rata-rata tarif harian.
 - Pendekatan:
-  -- Pembersihan data untuk mengatasi nilai yang hilang, outlier, dan variabel yang tidak relevan.
-  -- Analisis eksploratif menggunakan visualisasi data dan statistik deskriptif.
-  -- Pembuatan tabel dan grafik untuk mengidentifikasi pola pembatalan.
+    1. Pembersihan data untuk menangani nilai yang hilang, outlier, dan variabel yang tidak relevan.
+    2. Analisis eksploratif dengan menggunakan visualisasi data dan statistik deskriptif.
+    3. Pembuatan tabel dan grafik untuk mengidentifikasi pola pembatalan.
 
 ### 5.3 Wawasan Menarik yang ditemukan
 
-1. Tipe Pelanggan: Pelanggan grup memiliki kemungkinan pembatalan yang lebih tinggi dibandingkan pelanggan transient.
-2. Lead Time: Pemesanan dengan lead time yang panjang lebih berisiko untuk dibatalkan.
-3. Harga (ADR): Pesanan dengan harga lebih tinggi lebih cenderung dibatalkan, menunjukkan bahwa pelanggan mungkin sensitif terhadap harga.
-4. Jenis hotel: Resort Hotel mengalami tingkat pembatalan yang lebih tinggi dibandingkan dengan hotel kota. Oleh karena itu, Resort Hotel sebaiknya menawarkan diskon harga kamar yang lebih kompetitif pada akhir pekan dan hari libur.
-5. Permintaan Khusus: Pesanan dengan lebih banyak permintaan khusus cenderung lebih jarang dibatalkan, menunjukkan keterlibatan pelanggan yang lebih tinggi.
-6. Anomali pemesanan: Pada bulan Januari, tingkat pembatalan cenderung meningkat. Hotel dapat meluncurkan promosi pemasaran dengan penawaran menarik di bulan ini untuk meningkatkan pendapatan.
+1. Tipe Pelanggan: Pelanggan grup memiliki kecenderungan lebih tinggi untuk membatalkan pemesanan dibandingkan pelanggan individu (transient).
+2. Lead Time: Pemesanan dengan lead time panjang lebih rentan untuk dibatalkan.
+3. Harga (ADR): Pemesanan dengan harga lebih tinggi lebih sering dibatalkan, menunjukkan bahwa pelanggan mungkin sensitif terhadap harga.
+4. Jenis Hotel: Resort Hotel memiliki tingkat pembatalan yang lebih tinggi dibandingkan City Hotel. Oleh karena itu, Resort Hotel disarankan untuk menawarkan diskon harga kamar yang lebih kompetitif, terutama pada akhir pekan dan hari libur.
+5. Permintaan Khusus: Pemesanan dengan lebih banyak permintaan khusus cenderung lebih jarang dibatalkan, menunjukkan tingkat keterlibatan pelanggan yang lebih tinggi.
+6. Anomali Pemesanan: Pada bulan Januari, tingkat pembatalan cenderung meningkat. Hotel dapat mempertimbangkan untuk meluncurkan promosi menarik pada bulan ini guna meningkatkan pendapatan.
 
 ### 5.4 Manfaat analisis
 
-Hasil analisis ini memberikan wawasan strategis yang dapat membantu efisiensi dan kerugian untuk:
+Hasil analisis ini memberikan wawasan strategis yang dapat membantu meningkatkan efisiensi dan mengurangi kerugian melalui langkah-langkah berikut:
 
-- Meningkatkan Kebijakan Pemesanan: Mengurangi pembatalan melalui kebijakan fleksibel atau penalti untuk pelanggan dengan lead time panjang.
-- Strategi Harga yang Efektif: Memberikan diskon untuk lead time yang pendek atau menawarkan fleksibilitas lebih untuk harga yang lebih tinggi.
-- Fokus pada Pelanggan Grup: Memberikan penawaran atau kontrak yang lebih menarik untuk mengurangi pembatalan dalam kategori ini.
-- Meningkatkan Layanan: Memastikan permintaan khusus pelanggan terpenuhi untuk meningkatkan tingkat penyelesaian reservasi.
-- Mengatasi Anomali Musiman: Meluncurkan promosi pemasaran yang menarik pada bulan-bulan dengan tingkat pembatalan tinggi, seperti Januari, untuk mengoptimalkan pendapatan selama musim sepi.
-- Diskon untuk Resort Hotel: Mengingat bahwa Resort Hotel memiliki tingkat pembatalan yang lebih tinggi dibandingkan City Hotel, diskon harga kamar yang lebih kompetitif pada akhir pekan dan hari libur dapat membantu menarik lebih banyak pelanggan dan mengurangi tingkat pembatalan.
+1. Peningkatan Kebijakan Pemesanan: Mengurangi pembatalan dengan menerapkan kebijakan yang lebih fleksibel atau memberikan penalti untuk pelanggan dengan lead time panjang.
+2. Strategi Penetapan Harga yang Efektif: Menawarkan diskon untuk pemesanan dengan lead time pendek atau memberikan lebih banyak fleksibilitas untuk harga yang lebih tinggi.
+3. Fokus pada Pelanggan Grup: Menyediakan penawaran atau kontrak yang lebih menarik untuk mengurangi tingkat pembatalan di segmen pelanggan grup.
+4. Peningkatan Layanan: Memastikan bahwa permintaan khusus pelanggan dipenuhi untuk meningkatkan kemungkinan pemesanan yang selesai.
+5. Mengatasi Anomali Musiman: Meluncurkan promosi pemasaran yang menarik pada bulan-bulan dengan tingkat pembatalan tinggi, seperti Januari, untuk memaksimalkan pendapatan selama periode sepi.
+6. Diskon untuk Resort Hotel: Mengingat tingkat pembatalan yang lebih tinggi pada Resort Hotel dibandingkan City Hotel, menawarkan diskon harga kamar yang lebih kompetitif pada akhir pekan dan hari libur dapat membantu menarik lebih banyak pelanggan dan mengurangi tingkat pembatalan.
 
 </div>
 <br>
